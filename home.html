@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Website</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script> <!-- Include JS -->
+</head>
+<body>
+    <header>
+        <div class="logo">MatchNest</div>
+        <div class="txtt">Your journey to LOVE starts here &#128150;</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="query-buttons">
+            <button onclick="runQuery('nested')">Minor Occupation</button>
+            <button onclick="runQuery('having')">Major Religion</button>
+            <button onclick="runQuery('view')">User Overview</button>
+            <button onclick="runQuery('insert_into')">All Female User</button>
+        </div>
+    </section>
+
+    <div id="popup" style="display:none; position:fixed; top:10%; left:10%; width:80%; background:white; padding:20px; border:2px solid black; z-index:1000; overflow:auto; max-height:80%;">
+        <button onclick="closePopup()" style="float:right;">Close</button>
+        <div id="popup-content"></div>
+    </div>
+
+    <div class="auth-buttons">
+        <button onclick="location.href='http://localhost/matdm/login.html'">Login</button>
+        <button onclick="location.href='http://localhost/matdm/register.html'">Register</button>
+    </div>
+
+    <section class="info">
+        <h1 style="text-align:center; color:black; font-size:60px;">How MatchNest works?</h1>
+        <h2 style="text-align:center; font-size:30px; font-weight: normal;">Get Started in MatchNest doing 3 easy steps &#129392;</h2>
+        <img src="pic1.png" alt="Step 1" style="display:block; margin:auto;">
+        <img src="pic2.png" alt="Step 2" style="display:block; margin:20px auto;">
+    </section>
+</body>
+</html>

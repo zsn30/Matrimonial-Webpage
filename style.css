@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1; /* baby pink */
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .profile-pic form {
+    margin-top: 10px;
+  }
+  
+  .nav-btn {
+    display: block;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #ffe4e1;
+  }
+  

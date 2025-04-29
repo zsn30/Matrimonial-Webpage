@@ -1,0 +1,35 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-pic">
+        <img id="user-pic" src="uploads/default.png" alt="Profile Picture">
+        <form id="uploadForm" enctype="multipart/form-data">
+          <input type="file" id="picUpload" name="profile_pic" accept="image/*">
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+      <nav class="nav">
+        <button class="nav-btn" onclick="loadSection('myinfo')">My Info</button>
+        <button class="nav-btn" onclick="loadSection('family_info')">Family Info</button>
+        <button class="nav-btn" onclick="loadSection('requirement')">My Requirement</button>
+        <button class="nav-btn" onclick="loadSection('search')">Search Partner</button>
+        <button class="nav-btn" onclick="location.href='login.html'">Logout</button>
+      </nav>
+    </aside>
+    <main class="content" id="content-area">
+      <h2>Welcome to Your Profile</h2>
+      <p>Select an option from the left to begin.</p>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
